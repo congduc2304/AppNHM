@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgr1"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <Button
+            android:id="@+id/button_dangnhap"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:text="Đăng nhập"
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_dangki"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn"
+            android:padding="2dp"
+            android:text="Đăng ký "
+            android:textAllCaps="false"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/button_Quenmatkhau"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:textColor="@color/primary"
+            android:background="@drawable/btn"
+            android:text="Quên mật khẩu"
+            android:textStyle="bold"/>
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/button_thoat"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:textColor="@color/primary"
+            android:background="@drawable/btn"
+            android:text="Thoát"
+            android:textStyle="bold"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <EditText
+        android:textColor="@android:color/white"
+        android:id="@+id/input_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/input_matkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>
